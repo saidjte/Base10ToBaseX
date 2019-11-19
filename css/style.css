@@ -1,0 +1,22 @@
+body {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+main {
+    padding: 1%;
+}
+
+header img {
+    height: 90px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+td,th {
+    border: 1px solid;
+}
