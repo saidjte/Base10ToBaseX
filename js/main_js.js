@@ -27,7 +27,6 @@ function convert(){
     function reverseString(str) {
         return str.split("").reverse().join("");
     }       
-    
     return reverseString(modi)
 }
     document.getElementById("binary").innerHTML = calc(2);
