@@ -2,27 +2,27 @@ function convert(){
     function calc(base) {
     let decimal = document.getElementById("decimal").value;
     let modi="";
-    while (parseFloat(decimal)/base > 0) {
+    while (parseInt(decimal)/base > 0) {
             if (base === 16) {
-                if (parseFloat(decimal) % base < 10) {
-                    modi = modi + (parseFloat(decimal) % base );
-                } else if (parseFloat(decimal) % base === 10) {
+                if (parseInt(decimal) % base < 10) {
+                    modi = modi + (parseInt(decimal) % base );
+                } else if (parseInt(decimal) % base === 10) {
                     modi = modi + "A";
-                }else if (parseFloat(decimal) % base === 11) {
+                }else if (parseInt(decimal) % base === 11) {
                     modi = modi + "B";
-                }else if (parseFloat(decimal) % base === 12) {
+                }else if (parseInt(decimal) % base === 12) {
                     modi = modi + "C";
-                }else if (parseFloat(decimal) % base === 13) {
+                }else if (parseInt(decimal) % base === 13) {
                     modi = modi + "D";
-                }else if (parseFloat(decimal) % base === 14) {
+                }else if (parseInt(decimal) % base === 14) {
                     modi = modi + "E";
-                }else if (parseFloat(decimal) % base === 15) {
+                }else if (parseInt(decimal) % base === 15) {
                     modi = modi + "F";
                 }
             } else {
-                modi = modi + (parseFloat(decimal) % base );
+                modi = modi + (parseInt(decimal) % base );
             }
-        decimal = parseFloat(decimal)/base;
+        decimal = parseInt(decimal)/base;
     }
     function reverseString(str) {
         return str.split("").reverse().join("");
