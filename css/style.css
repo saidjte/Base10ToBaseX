@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 
-main {
+#convertBase1OToBasex {
     padding: 1%;
 }
 
@@ -15,6 +15,7 @@ header img {
 table {
     border-collapse: collapse;
     margin: auto;
+    width: 70%;
   }
   
 td,th {
